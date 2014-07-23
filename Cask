@@ -15,3 +15,5 @@
 (depends-on "s")
 (depends-on "shut-up")
 (depends-on "zenburn-theme")
+(depends-on "nyan-mode")
+
