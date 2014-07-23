@@ -2,6 +2,8 @@
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 
+(setq inhibit-startup-message t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
