@@ -15,3 +15,5 @@
  ;; If there is more than one, they won't work right.
  )
 (load-theme 'zenburn)
+
+(set-face-attribute 'default nil :height 140)
