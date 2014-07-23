@@ -19,3 +19,5 @@
 (load-theme 'zenburn)
 
 (set-face-attribute 'default nil :height 140)
+
+(display-time-mode 1)
