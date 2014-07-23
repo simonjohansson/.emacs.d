@@ -12,3 +12,4 @@
 (depends-on "magit")
 (depends-on "ag")
 (depends-on "ace-jump-mode")
+(depends-on "multiple-cursors")
