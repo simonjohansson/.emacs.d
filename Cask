@@ -11,3 +11,4 @@
 (depends-on "zenburn-theme")
 (depends-on "magit")
 (depends-on "ag")
+(depends-on "ace-jump-mode")
