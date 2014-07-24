@@ -16,4 +16,5 @@
 (depends-on "shut-up")
 (depends-on "zenburn-theme")
 (depends-on "nyan-mode")
-
+(depends-on "clojure-mode")
+(depends-on "cider")
