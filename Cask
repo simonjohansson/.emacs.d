@@ -20,3 +20,4 @@
 (depends-on "cider")
 (depends-on "rainbow-delimiters")
 (depends-on "litable")
+(depends-on "yaml-mode")
