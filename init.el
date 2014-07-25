@@ -2,4 +2,5 @@
 (load-library "packages")
 (load-library "look")
 (load-library "hooks")
+(load-library ".litable-lists")
 (load-library "plugins")
