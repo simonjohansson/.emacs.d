@@ -3,8 +3,14 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	indent-for-tab-command
+	paredit-doublequote
+	paredit-forward-delete
 	paredit-forward-slurp-sexp
 	paredit-open-round
+	paredit-semicolon
+	yaml-electric-backspace
+	yaml-electric-dash-and-dot
 	))
 
 (setq mc/cmds-to-run-once
