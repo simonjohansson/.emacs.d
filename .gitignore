@@ -33,3 +33,6 @@ tramp
 .Cask.swp
 .cask
 .Cask.swo
+
+# Sessions
+session.*
