@@ -13,3 +13,6 @@
 			    (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
+
+;; Auto wrap lines in text mode plz
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
