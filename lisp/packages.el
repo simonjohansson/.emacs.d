@@ -2,3 +2,4 @@
 (cask-initialize)
 (require 'pallet)
 (pallet-install)
+(require 'go-mode-load)

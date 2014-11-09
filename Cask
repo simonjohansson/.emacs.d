@@ -21,3 +21,4 @@
 (depends-on "rainbow-delimiters")
 (depends-on "yaml-mode")
 (depends-on "notmuch")
+(depends-on "go-mode")
