@@ -16,3 +16,7 @@
 
 ;; Auto wrap lines in text mode plz
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+;; Scala
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
+(define-key scala-mode-map (kbd "RET") 'newline-and-indent)
