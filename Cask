@@ -1,4 +1,5 @@
 (source melpa)
+(source gnu)
 
 (depends-on "ace-jump-mode")
 (depends-on "ag")
@@ -17,7 +18,7 @@
 (depends-on "zenburn-theme")
 (depends-on "nyan-mode")
 (depends-on "clojure-mode")
-;; (depends-on "cider")
+(depends-on "cider")
 (depends-on "rainbow-delimiters")
 (depends-on "yaml-mode")
 (depends-on "notmuch")
