@@ -4,7 +4,7 @@
 
 (setq inhibit-startup-message t)
 
-(load-theme 'zenburn)
+(load-theme 'tango-dark)
 
 (set-face-attribute 'default nil :height 140)
 
