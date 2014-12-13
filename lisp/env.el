@@ -1,6 +1,6 @@
 ;; Add my ~/bin to the path
-(setenv "PATH" (concat (getenv "PATH") ":/home/simon/bin"))
-(setq exec-path (append exec-path '("/home/simon/bin")))
+(setenv "PATH" (concat (getenv "PATH") ":" (expand-file-name "~/bin")))
+(setq exec-path (append exec-path '(expand-file-name "~/bin")))
 
 ;; Set default-directory to ~/ instead of /. Since Im using systemd
 ;; to start the emacs daemon.
@@ -21,6 +21,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(setq default-directory (expand-file-name "~/"))
 
 ;; 4 spaces per tab plz.
 (setq-default tab-width 4)

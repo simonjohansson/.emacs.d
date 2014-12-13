@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 (load-library "env")
 (load-library "packages")
 (load-library "look")

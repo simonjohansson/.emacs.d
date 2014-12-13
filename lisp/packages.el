@@ -1,4 +1,4 @@
-(require 'cask "~/.cask/cask.el")
+(require 'cask (expand-file-name "~/.cask/cask.el"))
 (cask-initialize)
 (require 'pallet)
 (pallet-install)
