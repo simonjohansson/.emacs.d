@@ -22,4 +22,3 @@
 (depends-on "yaml-mode")
 (depends-on "notmuch")
 (depends-on "go-mode")
-(depends-on "scala-mode")
