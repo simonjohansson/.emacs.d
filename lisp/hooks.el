@@ -16,3 +16,11 @@
 
 ;; Auto wrap lines in text mode plz
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+
+;; For Golang.
+(add-hook 'go-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 4)
+            (setq indent-tabs-mode 1)))
