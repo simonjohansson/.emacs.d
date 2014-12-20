@@ -6,3 +6,6 @@
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-p") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-a") 'mc/mark-all-like-this)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))

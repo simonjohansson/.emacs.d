@@ -24,3 +24,4 @@
 (depends-on "notmuch")
 (depends-on "go-mode")
 (depends-on "helm-spotify")
+(depends-on "exec-path-from-shell")
