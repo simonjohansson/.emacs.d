@@ -9,3 +9,6 @@
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
+
+;; Clojure expectations.
+(setenv "EXPECTATIONS_COLORIZE" "false")
