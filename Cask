@@ -1,5 +1,6 @@
 (source melpa)
 (source gnu)
+(source marmalade)
 
 (depends-on "ace-jump-mode")
 (depends-on "ag")
@@ -24,3 +25,4 @@
 (depends-on "notmuch")
 (depends-on "go-mode")
 (depends-on "exec-path-from-shell")
+(depends-on "expectations-mode")
