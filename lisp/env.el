@@ -12,3 +12,7 @@
 
 ;; Allow hash to be entered
 (global-set-key (kbd "M-3") '(lambda () (interactive) (insert "#")))
+
+;; Switch functionality between alt and cmd on mac.
+(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'meta)
