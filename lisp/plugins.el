@@ -2,13 +2,5 @@
 (require 'ace-jump-mode)
 (define-key global-map (kbd "M-SPC") 'ace-jump-mode)
 
-(require 'multiple-cursors)
-(global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-c C-p") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-a") 'mc/mark-all-like-this)
-
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
-
-;; Clojure expectations.
-(setenv "EXPECTATIONS_COLORIZE" "false")
