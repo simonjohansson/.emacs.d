@@ -6,3 +6,5 @@
 (setq inhibit-startup-message t)
 
 (setq font-lock-maximum-decoration t)
+
+(set-frame-parameter nil 'internal-border-width 20)

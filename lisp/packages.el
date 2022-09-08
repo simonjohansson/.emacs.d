@@ -68,7 +68,6 @@
   :straight t
   :demand
   :bind (("M-x" . helm-M-x)
-	 ("C-x C-f" . helm-find-files)
 	 ("C-x b" . helm-buffers-list)
 	 ("C-x c o" . helm-occur))
   :config (helm-mode 1))
@@ -78,3 +77,14 @@
   :straight t
   :bind (("M-;" . comment-dwim-2)
 	 ("s-/" . comment-dwim-2)))
+
+(use-package pdf-tools
+  :ensure t
+  :straight t
+  :pin manual
+  :config
+  (pdf-tools-install)
+  (setq-default pdf-view-display-size 'fit-width)
+  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
+  :custom
+  (pdf-annot-activate-created-annotations t "automatically annotate highlights"))
