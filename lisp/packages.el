@@ -72,3 +72,9 @@
 	 ("C-x b" . helm-buffers-list)
 	 ("C-x c o" . helm-occur))
   :config (helm-mode 1))
+
+(use-package comment-dwim-2
+  :ensure t
+  :straight t
+  :bind (("M-;" . comment-dwim-2)
+	 ("s-/" . comment-dwim-2)))
