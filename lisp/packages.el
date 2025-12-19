@@ -1,6 +1,6 @@
-(require 'find-func)
+(setq straight-use-package-by-default t)
 
-(which-key-mode)
+(require 'find-func)
 
 (use-package
   darcula-theme
@@ -56,6 +56,13 @@
 	 ("C-x b" . helm-buffers-list)
 	 ("C-x c o" . helm-occur))
   :config (helm-mode 1))
+
+(use-package which-key
+  :ensure t
+  :init
+  (which-key-mode)
+  (setq which-key-idle-delay 0.3)p
+  (setq which-key-popup-type 'side-window))
 
 (use-package
   comment-dwim-2
