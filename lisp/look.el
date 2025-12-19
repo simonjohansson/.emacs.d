@@ -8,3 +8,10 @@
 (setq font-lock-maximum-decoration t)
 
 (set-frame-parameter nil 'internal-border-width 20)
+
+(set-face-attribute 'default nil
+                    :family "Menlo"
+                    :height 240)
+
+(size-indication-mode -1)
+(setq doom-modeline-percent-position nil)

@@ -2,13 +2,20 @@
 
 (require 'find-func)
 
-(use-package
-  darcula-theme
+(use-package doom-themes
   :ensure t
-  :straight t
-  :config (set-frame-font "Monaco-22")
-  (load-theme 'darcula
-	      :t))
+  :custom
+  (doom-themes-enable-bold t)
+  (doom-themes-enable-italic t)
+  :config
+  (load-theme 'doom-one t))
+
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1)
+  :custom
+  (doom-modeline-buffer-file-name-style 'relative-from-project)
+  (doom-modeline-major-mode-icon t))
 
 (use-package
   ace-jump-mode
@@ -22,12 +29,6 @@
   :straight t
   :config (when (memq window-system '(mac ns x))
 	    (exec-path-from-shell-initialize)))
-
-(use-package
-  nyan-mode
-  :ensure t
-  :straight t
-  :config (nyan-mode))
 
 (use-package
   rainbow-delimiters
@@ -61,7 +62,7 @@
   :ensure t
   :init
   (which-key-mode)
-  (setq which-key-idle-delay 0.3)p
+  (setq which-key-idle-delay 0.3)
   (setq which-key-popup-type 'side-window))
 
 (use-package
