@@ -36,31 +36,12 @@
   :ensure t
   :straight t)
 
-
 (use-package
   yaml-mode
   :ensure t
   :straight t
   :config (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
   (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode)))
-
-(use-package
-  org-roam
-  :ensure t
-  :straight t
-  :init (setq org-roam-v2-ack t)
-  :custom (org-roam-directory "~/RoamNotes")
-  (org-roam-completion-everywhere t)
-  :bind (("C-c n l" . org-roam-buffer-toggle)
-	 ("C-c n f" . org-roam-node-find)
-	 ("C-c n i" . org-roam-node-insert)
-	 :map org-mode-map
-	 ("C-M-i" . completion-at-point)
-	 :map org-roam-dailies-map ("Y" . org-roam-dailies-capture-yesterday)
-	 ("T" . org-roam-dailies-capture-tomorrow))
-  :bind-keymap ("C-c n d" . org-roam-dailies-map)
-  :config (require 'org-roam-dailies) ;; Ensure the keymap is available
-  (org-roam-db-autosync-mode))
 
 (use-package
   helm
@@ -78,16 +59,6 @@
   :straight t
   :bind (("M-;" . comment-dwim-2)
 	 ("s-/" . comment-dwim-2)))
-
-(use-package
-  pdf-tools
-  :ensure t
-  :straight t
-  :pin manual
-  :config (pdf-tools-install)
-  (setq-default pdf-view-display-size 'fit-width)
-  (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward)
-  :custom (pdf-annot-activate-created-annotations t "automatically annotate highlights"))
 
 (use-package
   elisp-format

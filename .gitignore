@@ -2,7 +2,7 @@
 *~
 \#*\#
 /.emacs.desktop
-/.emacs.desktop.lock
+n/.emacs.desktop.lock
 *.elc
 auto-save-list
 tramp
@@ -57,3 +57,5 @@ org-roam.db
 # Random stuff
 /transient/
 /bookmarks
+
+eln-cache

@@ -6,5 +6,7 @@
 					; use versioned backups
 
 ;; Switch functionality between alt and cmd on mac.
-;; (setq mac-option-modifier 'super)
-;; (setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'meta)
+
+
