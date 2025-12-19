@@ -1,3 +1,7 @@
+(require 'find-func)
+
+(which-key-mode)
+
 (use-package
   darcula-theme
   :ensure t
@@ -64,3 +68,7 @@
   elisp-format
   :ensure t
   :straight t)
+
+(use-package vterm
+    :ensure t
+    :commands vterm)
